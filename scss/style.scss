@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+$primary-color: #000;
+$font-stack: 'Montserrat', sans-serif;
+$mock-up-width: 1440;
+$mobile-width: 767.98;
+$primary-yellow: #FFD966;
+$vw: $mock-up-width/100vw;
+
+body{
+    font-family: $font-stack;
+    color: $primary-color;
+}
+h1, h2, h3, p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper{
+    width: 1440/$vw;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.docs-reports__container{
+    width: 576/$vw;
+    margin: 0 auto;
+}
+.docs-reports {
+    text-align: center;
+    margin: 48/$vw auto 135/$vw;
+
+    &__title {
+        font-weight: 500;
+        font-size: 40/$vw;
+        line-height: 120%;
+        margin-bottom: 72/$vw;
+        text-align: center;
+    }
+    
+    &__text {
+        font-size: 16/$vw;
+        font-weight: 500;
+        line-height: 120%
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 32/$vw;
+        margin: 72/$vw 0;
+    }
+
+    &__details-top-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32/$vw;
+    }
+
+    &__details-top-left,
+    &__details-top-right {
+        width: 272/$vw;
+        height: 68/$vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1/$vw solid $primary-color;
+        border-radius: 20/$vw;
+    }
+
+    &__details-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 32/$vw;
+    }
+
+    &__left-box {
+        width: 321/$vw;
+        box-sizing: border-box;
+        border: 1/$vw solid $primary-color;
+        border-radius: 20/$vw;
+    }
+
+    &__left-box-img {
+        background-image: url("../img/Card.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 438/$vw;
+    }
+
+    &__right-box {
+        width: 223/$vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 32/$vw;
+    }
+
+    &__top-right-box,
+    &__bottom-right-box {
+        height: 203/$vw;
+        box-sizing: border-box;
+        border: 1/$vw solid $primary-color;
+        border-radius: 20/$vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__top-right-box-text,
+    &__bottom-right-box-text {
+        max-width: 176/$vw;
+    }
+
+    &__details-bottom-box {
+        height: 68/$vw;
+        box-sizing: border-box;
+        border: 1/$vw solid $primary-color;
+        border-radius: 20/$vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__report-box {
+        height: 156/$vw;
+        box-sizing: border-box;
+        border: 1/$vw solid $primary-color;
+        border-radius: 20/$vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        gap: 16/$vw;
+        padding: 20/$vw 24/$vw;
+    }
+
+    &__report-box-title {
+        font-weight: 700;
+        font-size: 20/$vw;
+        line-height: 120%;
+    }
+
+    &__report-description {
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    &__report-date {
+        font-size: 14/$vw;
+        line-height: 130%;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20/$vw;
+    }
+
+    &__info-text {
+        text-align: left;
+        width: 238/$vw;
+        height: 43/$vw;
+        color: #1F1F1F;
+    }
+
+    &__info-btn {
+        width: 318/$vw;
+        height: 43/$vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12/$vw 23/$vw;
+        border: none;
+        background-color: $primary-yellow;
+        cursor: pointer;
+    }
+
+    &__info-btn-text{
+        color: #1F1F1F;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    
+}
